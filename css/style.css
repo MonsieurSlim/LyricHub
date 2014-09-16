@@ -1,0 +1,88 @@
+body {
+	background-color: grey;
+	background-image: url("../img/bodyBackground.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 150vh;
+	text-align: center;
+}
+
+#wrapper {
+	margin: 50px;
+	padding: 50px;
+}
+a {
+	text-decoration: none;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	background: #4B4B4B;
+	color: white;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-bottom-width: 5px;
+	margin-bottom: 50px;
+}
+
+#desc {
+	background: rgba(0,180,0,0.6);
+	width: 50%;
+	margin: auto;
+	padding: 5px;
+}
+
+h1 {
+	font-family: 'Bitter', sans-serif;
+	font-size: 3em;
+}
+
+h4 {
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#logo {
+	position: absolute;
+	left: 0;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	float: left;
+}
+
+#artistField, #songField {
+	width: 60%;
+	height: 25px;
+	padding: 10px;
+	margin: 20px auto;
+	border-style: none;
+}
+
+#artistField:hover, #songField:hover {
+	border-style: solid;
+	border-width: 1px;
+	border-color: blue;
+}
+
+#searchButton {
+	font-family: 'Bitter', sans-serif;
+	color: white;
+	background: green;
+	padding: 10px 20px;
+	margin: 20px;
+	border-style: none;
+	border-radius: 5px;
+}
+
+#searchButton:hover {
+	box-shadow: 5px 5px 5px lightblue;
+}
+
+footer {
+font-family: 'Bitter', sans-serif;
+}
