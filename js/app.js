@@ -39,7 +39,7 @@ var lyricHub = {
 		song = $("#songField").val().trim().toLowerCase();
 		artist = $("#artistField").val().trim().toLowerCase();
 		if(artist === "" && song === "") {
-			lyricHub.displayArea.text('You must enter at least one parameter');
+			alert('You must enter at least one parameter');
 		} 
 		else if(song !== "" && artist !== "")  
 		{

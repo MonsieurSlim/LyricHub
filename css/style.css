@@ -104,27 +104,24 @@ header {
 	text-align: left;
 	width: 90%;
 	max-height: 50%;
+	margin: auto;
 }
 
-
-#ifRelatedSongs {
+#ifRelatedSongs, #ifLyrics {
 	width: 45%;
 	height: 200px;
 	padding: 2%;
 	overflow: auto;
-	position: absolute;
-	right: 2px;
+	margin: auto;
 	background-color: rgba(0,0,0,0.7);
+}
+
+#ifRelatedSongs {
+	float: right;
 }
 
 #ifLyrics {
-	width: 45%;
-	height: 200px;
-	padding: 2%;
-	position: absolute;
-	overflow: auto;
-	left : 2px;
-	background-color: rgba(0,0,0,0.7);
+	float: left;
 }
 
 .songFound ul {
@@ -167,7 +164,8 @@ header {
 
 
 footer {
-	
+	position: relative;
+	bottom: 0;
 	clear: both;
 	font-family: 'Bitter', sans-serif;
 }
