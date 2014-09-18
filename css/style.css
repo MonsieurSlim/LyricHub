@@ -1,3 +1,5 @@
+/*---------------GENERAL------------------*/
+
 body {
 	background-color: grey;
 	background-image: url("../img/bodyBackground.jpg");
@@ -13,7 +15,16 @@ body {
 a {
 	text-decoration: none;
 }
+a:hover {
+	color: orange;
+}
+h1 {
+	font-family: 'Bitter', sans-serif;
+	font-size: 3em;
+}
 
+
+/*---------------HEADER------------------*/
 header {
 	position: fixed;
 	top: 0;
@@ -28,24 +39,6 @@ header {
 	margin-bottom: 50px;
 }
 
-#desc {
-	background: rgba(0,180,0,0.6);
-	width: 50%;
-	margin: auto;
-	padding: 5px;
-}
-
-h1 {
-	font-family: 'Bitter', sans-serif;
-	font-size: 3em;
-}
-
-h4 {
-	color: white;
-	font-style: italic;
-	font-weight: bold;
-}
-
 #logo {
 	position: absolute;
 	left: 0;
@@ -54,6 +47,10 @@ h4 {
 	border-radius: 50%;
 	float: left;
 }
+
+
+
+/*---------------INPUT AREA------------------*/
 
 #artistField, #songField {
 	width: 60%;
@@ -69,8 +66,9 @@ h4 {
 	border-color: blue;
 }
 
-#searchButton {
+#searchButton, #resetButton {
 	font-family: 'Bitter', sans-serif;
+	font-size: 1.15em;
 	color: white;
 	background: green;
 	padding: 10px 20px;
@@ -79,10 +77,97 @@ h4 {
 	border-radius: 5px;
 }
 
-#searchButton:hover {
+#searchButton:hover ,  #resetButton:hover {
 	box-shadow: 5px 5px 5px lightblue;
 }
 
+
+/*---------------SEARCH RESULTS DISPLAY AREA------------------*/
+
+#desc {
+	background: rgba(0,180,0,0.6);
+	color: black;
+	font-style: italic;
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+	font-size: 1.25em;
+	font-weight: bolder;
+}
+
+#displayArea {
+	color: white;
+	font-style: italic;
+	position: relative;
+	border-radius: 10px;
+	font-size: 1.25em;
+	text-align: left;
+	width: 90%;
+	max-height: 50%;
+}
+
+
+#ifRelatedSongs {
+	width: 45%;
+	height: 200px;
+	padding: 2%;
+	overflow: auto;
+	position: absolute;
+	right: 2px;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#ifLyrics {
+	width: 45%;
+	height: 200px;
+	padding: 2%;
+	position: absolute;
+	overflow: auto;
+	left : 2px;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.songFound ul {
+	list-style: none;
+}
+.songFound li {
+	display: inline-block;
+	padding: 5px;
+}
+
+.playIcon {
+	height: 50px;
+	width: 70px;
+	border-radius: 10px;
+}
+.albumArt {
+	height: 100px;
+	width: 100px;
+}
+
+
+/*Response Progress Image*/
+#loading {
+	margin: 10px;
+}
+
+
+/*Music Player*/
+#player {
+	width: 30%;
+}
+
+.clearfix:after {
+   content: " "; /* Older browsers do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+
 footer {
-font-family: 'Bitter', sans-serif;
+	
+	clear: both;
+	font-family: 'Bitter', sans-serif;
 }
