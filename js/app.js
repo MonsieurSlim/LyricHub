@@ -25,8 +25,8 @@ var lyricHub = {
 	initEvent:function()
 	{
 		lyricHub.resetButton.click(function () {
-			$("#songField").val("");
-			$("#artistField").val("");
+			location.reload();
+
 		});
 		lyricHub.searchButton.click(lyricHub.onSearch);
 		$("#loading").fadeOut();
@@ -100,11 +100,17 @@ var lyricHub = {
 		lyricHub.jsonResult = response;
 		console.log(lyricHub.jsonResult);
 		$("#loading").fadeOut();
-		$("#artist").text("Artist : " + lyricHub.jsonResult.artist);
-		$("#song").text("Song Title : " + lyricHub.jsonResult.song);
-		$("#lyric").text("Song Lyrics : " + lyricHub.jsonResult.lyrics);
-		$("#link").text("Continue to full lyrics...");
-		$("#link").attr("href", lyricHub.jsonResult.url);
+		if (lyricHub.jsonResult.albums !== undefined) {
+			$("#song").text('"...Please put both the Artist and Song names to generate the lyrics. If you\'re uncertain, consult the search results on the right."');
+		}
+		if (lyricHub.jsonResult.song !== undefined) 
+		{
+			$("#artist").text("Artist : " + lyricHub.jsonResult.artist);
+			$("#song").text("Song Title : " + lyricHub.jsonResult.song);
+			$("#lyric").text("Song Lyrics : " + lyricHub.jsonResult.lyrics);
+			$("#link").text("Continue to full lyrics...");
+			$("#link").attr("href", lyricHub.jsonResult.url);
+		}
 		
 	},
 	onFindSuccess: function(response)
