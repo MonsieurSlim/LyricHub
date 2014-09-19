@@ -47,8 +47,21 @@ header {
 	border-radius: 50%;
 	float: left;
 }
+/*---------------DESCRIPTION AREA------------------*/
+#desc {
+	background: rgba(0,180,0,0.6);
+	color: black;
+	font-style: italic;
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	font-size: 1.25em;
+	font-weight: bold;
+}
 
-
+#findAbout {
+	font-size: 1em;
+}
 
 /*---------------INPUT AREA------------------*/
 
@@ -66,7 +79,7 @@ header {
 	border-color: blue;
 }
 
-#searchButton, #resetButton {
+#searchButton, #resetButton, #findAbout {
 	font-family: 'Bitter', sans-serif;
 	font-size: 1.15em;
 	color: white;
@@ -77,23 +90,12 @@ header {
 	border-radius: 5px;
 }
 
-#searchButton:hover ,  #resetButton:hover {
+#searchButton:hover ,  #resetButton:hover, #findAbout:hover {
 	box-shadow: 5px 5px 5px lightblue;
 }
 
 
 /*---------------SEARCH RESULTS DISPLAY AREA------------------*/
-
-#desc {
-	background: rgba(0,180,0,0.6);
-	color: black;
-	font-style: italic;
-	width: 80%;
-	margin: auto;
-	padding: 10px;
-	font-size: 1.25em;
-	font-weight: bolder;
-}
 
 #displayArea {
 	color: white;
@@ -169,6 +171,21 @@ footer {
 	clear: both;
 	font-family: 'Bitter', sans-serif;
 }
+/*--------ABOUT PAGE-----------*/
+
+#about {
+	font-family: 'Bitter', sans-serif;
+	font-style: italic;
+	text-align: left;
+	color: white;
+	background: rgba(0,0,0,0.7);
+	padding: 30px;
+	margin: 20px auto;
+}
+#about span {
+	color: green;
+}
+
 
 /*--------MOBILE RESPONSIVENESS-----------*/
 
